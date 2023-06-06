@@ -1,0 +1,239 @@
+.grid {
+  position: relative;
+}
+.main-game {
+  position: relative;
+}
+.game-cover {
+  width: 300px;
+  height: 300px;
+}
+.vertical-separator {
+  background-color: black;
+  width: 10px;
+  height: 300px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.horizontal-separator {
+  background-color: red;
+  width: 10px;
+  height: 300px;
+  border-radius: 5px;
+  position: absolute;
+  rotate: 90deg;
+}
+.vs1 {
+  left: 100px;
+}
+.vs2 {
+  left: 200px;
+}
+
+.hs1 {
+  left: 150px;
+  top: -50px;
+}
+
+.hs2 {
+  left: 150px;
+  top: 50px;
+}
+
+.cross-mark {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.cross-mark::before,
+.cross-mark::after {
+  content: "";
+  height: 50px;
+  width: 10px;
+  background-color: rgb(0, 145, 255);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+.cross-mark::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross-mark::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border: 10px solid rgb(57, 200, 100);
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.center-find {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+}
+
+#_1-1 {
+  top: 0;
+  left: 0;
+}
+
+#_1-2 {
+  top: 0;
+  left: 100px;
+}
+#_1-3 {
+  top: 0;
+  left: 200px;
+}
+
+#_2-1 {
+  top: 100px;
+  left: 0;
+}
+
+#_2-2 {
+  top: 100px;
+  left: 100px;
+}
+#_2-3 {
+  top: 100px;
+  left: 200px;
+}
+
+#_3-1 {
+  top: 200px;
+  left: 0;
+}
+
+#_3-2 {
+  top: 200px;
+  left: 100px;
+}
+#_3-3 {
+  top: 200px;
+  left: 200px;
+}
+
+.finish-line {
+  height: 300px;
+  width: 10px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: rgb(255, 0, 251);
+  visibility: hidden;
+}
+
+.rowfl {
+  rotate: 90deg;
+  left: 150px;
+}
+
+#row1 {
+  top: -100px;
+}
+
+#row2 {
+  top: 0px;
+}
+
+#row3 {
+  top: 100px;
+}
+
+#col1 {
+  left: 50px;
+}
+
+#col2 {
+  left: 150px;
+}
+
+#col3 {
+  left: 250px;
+}
+
+#diag-lr {
+  rotate: 45deg;
+  left: 150px;
+}
+
+#diag-rl {
+  rotate: -45deg;
+  left: 150px;
+}
+
+.diag {
+  height: 400px;
+  top: -50px;
+}
+
+.make-visible {
+  visibility: visible;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-screen {
+  display: flex;
+  justify-content: center;
+}
+
+.your-turn {
+  background-color: greenyellow;
+}
+
+.not-your-turn {
+  background-color: rgb(186, 61, 61);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

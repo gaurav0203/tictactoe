@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Tic - Tac - Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe !</h1>
+    <h2 id="state-title">Press Start to Begin !</h2>
+    <button class="btn">Start</button>
+    <div class="middle-screen">
+      <div class="player-info">
+        <h3 id="Player-1-Title">Player 1</h3>
+        <ul id="Player-1-Moves"></ul>
+      </div>
+      <div class="game-cover">
+        <div class="main-game">
+          <div class="grid">
+            <div class="vertical-separator vs1"></div>
+            <div class="vertical-separator vs2"></div>
+            <div class="horizontal-separator hs1"></div>
+            <div class="horizontal-separator hs2"></div>
+            <div id="row1" class="finish-line rowfl"></div>
+            <div id="row2" class="finish-line rowfl"></div>
+            <div id="row3" class="finish-line rowfl"></div>
+
+            <div id="col1" class="finish-line"></div>
+            <div id="col2" class="finish-line"></div>
+            <div id="col3" class="finish-line"></div>
+
+            <div id="diag-lr" class="finish-line diag"></div>
+            <div id="diag-rl" class="finish-line diag"></div>
+          </div>
+
+          <div id="_1-1" class="center-find">
+            <div id="_1" class=""></div>
+          </div>
+          <div id="_1-2" class="center-find">
+            <div id="_2" class=""></div>
+          </div>
+          <div id="_1-3" class="center-find">
+            <div id="_3" class=""></div>
+          </div>
+
+          <div id="_2-1" class="center-find">
+            <div id="_4" class=""></div>
+          </div>
+          <div id="_2-2" class="center-find">
+            <div id="_5" class=""></div>
+          </div>
+          <div id="_2-3" class="center-find">
+            <div id="_6" class=""></div>
+          </div>
+
+          <div id="_3-1" class="center-find">
+            <div id="_7" class=""></div>
+          </div>
+          <div id="_3-2" class="center-find">
+            <div id="_8" class=""></div>
+          </div>
+          <div id="_3-3" class="center-find">
+            <div id="_9" class=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-info">
+        <h3 id="Player-2-Title">Player 2</h3>
+        <ul id="Player-2-Moves"></ul>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="winner-title">
+          <p>Some text in the Modal..</p>
+        </div>
+        <img src="images/banana.gif" width="100" height="100" />
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
